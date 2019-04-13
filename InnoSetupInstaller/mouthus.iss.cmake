@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+
+SET(CMAKE_INNO_SETUP_OUTPUT_BASE_FILENAME "Mouthus-${CMAKE_INNO_SETUP_APP_VERSION}-win${BIT_NUMBER}")
+SET(CMAKE_INNO_SETUP_EXE_PATH "${Mouthus_location}")
+
+configure_file(${CMAKE_CURRENT_BINARY_DIR}/mouthus.iss.in ${CMAKE_CURRENT_BINARY_DIR}/mouthus.iss @ONLY IMMEDIATE)
