@@ -67,7 +67,7 @@ std::string MouthusDict::pickWord(int wordLength) const
             assert(0);
             break;
     }
-       
+    
     return word;
 }
 
